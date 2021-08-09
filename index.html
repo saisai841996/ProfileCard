@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="...">
+    <title>ProfileCard</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="hover.css" rel="stylesheet" media="all">
+    <script src="https://kit.fontawesome.com/f6816dd194.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+</head>
+
+<style>
+    /* #aws {
+      border: 1px solid rgb(235, 20, 20);
+      border-radius: 33px;
+      padding: 14px;   
+      width: 77px; 
+      margin-top: -17px;
+    } */
+
+    /* .aws:hover {
+    color: rgb(214, 21, 21);
+    cursor: pointer;
+    text-decoration: royalblue;
+    
+} */
+</style>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+    <script>bubbly();</script>
+
+
+    <div class="main center">
+        <div class="box center">
+            <img src="pic.jpg" alt="">
+            <div>
+                <p class="user_name">Arjun Avagadda</p>
+                <p class="skill">Devops Engineer</p>
+            </div>
+            <div class="arr_container center ">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="left_container off">
+
+                <p style="
+    font-family: cursive;
+    font-size: larger;
+    text-decoration: overline;
+    text-decoration-color: rgb(239 16 16);
+    color: cyan; margin-top: -19px;
+">Skills</p>
+
+        <div class="skills">
+            <a href="https://git-scm.com/" target="_blank">
+                <span class="iconify hvr-float" data-icon="fa-brands:git" data-width="30"></span></a>
+            <a href="https://www.jenkins.io/" target="_blank">
+                <span class="iconify hvr-grow" data-icon="logos:jenkins" data-width="30"></span></a>
+                <a href="https://www.docker.com/" target="_blank">
+                    <span class="iconify hvr-bounce-in" data-icon="logos:docker-icon" data-width="40"></span></a>
+                    <a href="https://www.ansible.com/" target="_blank">
+                        <span class="iconify hvr-bounce-out" data-icon="logos:ansible" data-width="40"></span></a>
+                        <a href="https://aws.amazon.com/" target="_blank">
+                            <span class="iconify hvr-sink" data-icon="logos:aws" data-width="50"></span>
+               
+                    <a href="https://www.terraform.io/" target="_blank">
+                        <span class="iconify hvr-bob" data-icon="logos:terraform-icon" data-width="30"></span> 
+                    </a>
+
+                    <a href="https://kubernetes.io/" target="_blank">
+                        <span class="iconify hvr-hang" data-icon="logos:kubernetes" data-width="50"></span>
+                    </a>
+                    <a href="https://www.python.org/" target="_blank">
+                        <span class="iconify hvr-skew" data-icon="logos:python" data-width="30"></span>
+                    </a>
+                    <a href="https://www.splunk.com/" target="_blank">
+                        <span style="background-color: green;" class="iconify hvr-wobble-vertical" data-icon="logos:splunk"
+                        data-width="50"></span> 
+                    </a>
+                    <a href="https://www.atlassian.com/software/jira" target="_blank">
+                        <span class="iconify hvr-buzz" data-icon="logos:jira" data-width="20"></span>
+                    </a>
+                </div>
+                <p style="
+                font-family: cursive;
+                font-size: larger;
+                text-decoration: overline;
+                text-decoration-color: rgb(239 16 16);
+                color: cyan; margin-top: 30px;
+            ">Contact</p>
+                <div class="icons">
+                    <a href="https://github.com/arjunavagadda" target="_blank"> <i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/arjunavagadda207" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/arjun_207" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/arjun.avagadda" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+
+                </div>
+                <div class="cancel center">
+                    <i class="fas fa-times"></i>
+
+                </div>
+            </div>
+
+        </div>
+        <button><a style="color: cyan" href="https://arjunavagadda.github.io/online-cv/" target="_blank">Resume</a></button>
+    </div>
+    <div><i class="far fa-file"></i></div>
+
+    <script>
+        const clc = document.querySelector(".cancel");
+        const arr = document.querySelector(".arr_container");
+        const left_container = document.querySelector(".left_container");
+
+        arr.addEventListener("click", () => {
+            arr.classList.add("active_arr");
+            if (left_container.classList.contains("off")) {
+                left_container.classList.remove("off");
+                left_container.classList.add("active");
+            }
+        });
+        clc.addEventListener("click", () => {
+            arr.classList.remove("active_arr");
+            if (left_container.classList.contains("active")) {
+                left_container.classList.remove("active");
+                left_container.classList.add("off");
+            }
+        });
+
+
+
+    </script>
+</body>
+
+</html>
